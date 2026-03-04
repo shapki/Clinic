@@ -11,19 +11,23 @@ namespace Clinic.AppForms
             ContextManager.loginForm = this;
         }
 
-        private void usersBindingNavigatorSaveItem_Click(object sender, System.EventArgs e)
-        {
-            this.Validate();
-            this.usersBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.shapkin_clinicDataSet);
-
-        }
-
+        /// <summary>
+        /// PKGH
+        /// Авторизация
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void loginButton_Click(object sender, System.EventArgs e)
         {
             AuthManager.Login(loginTextBox.Text, passwordTextBox.Text);
         }
 
+        /// <summary>
+        /// PKGH
+        /// Вход в роли Гостя
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void guestLoginButton_Click(object sender, System.EventArgs e)
         {
             AuthManager.Login("g", "g");

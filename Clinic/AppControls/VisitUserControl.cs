@@ -19,6 +19,10 @@ namespace Clinic.AppControls
             ShowVisitInfo();
         }
 
+        /// <summary>
+        /// PKGH
+        /// Подстановка информации о визите пациента
+        /// </summary>
         private void ShowVisitInfo()
         {
             dateLabel.Text = $"Дата: {_visit.VisitDate:dd.MM.yyyy}";

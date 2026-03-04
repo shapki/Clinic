@@ -7,6 +7,12 @@ namespace Clinic.AppServices
 {
     internal class AuthManager
     {
+        /// <summary>
+        /// PKGH
+        /// Авторизация
+        /// </summary>
+        /// <param name="login">Логин</param>
+        /// <param name="password">Пароль</param>
         public static void Login(string login, string password)
         {
             Users tmpUser = Program.context.Users
@@ -28,6 +34,11 @@ namespace Clinic.AppServices
             ContextManager.loginForm.Hide();
         }
 
+        /// <summary>
+        /// PKGH
+        /// Выход из учётки
+        /// </summary>
+        /// <param name="form">Форма</param>
         public static void Logout(ParentForm form)
         {
             ContextManager.user = null;

@@ -19,6 +19,10 @@ namespace Clinic.AppForms
             LoadVisits();
         }
 
+        /// <summary>
+        /// PKGH
+        /// Загрузка посещений пациента
+        /// </summary>
         private void LoadVisits()
         {
             flowLayoutPanel1.Controls.Clear();
@@ -38,7 +42,7 @@ namespace Clinic.AppForms
             {
                 Label emptyLabel = new Label
                 {
-                    Text = "У пациента нет обращений",
+                    Text = "У пациента нет посещений",
                     AutoSize = true,
                     Location = new System.Drawing.Point(10, 10)
                 };

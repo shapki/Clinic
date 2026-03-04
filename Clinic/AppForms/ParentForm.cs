@@ -12,7 +12,6 @@ namespace Clinic.AppForms
             HideLogoutUi();
             ContextManager.parentForm = this;
         }
-
         public void HideLogoutUi()
         {
             logoutButton.Visible = false;
@@ -27,6 +26,11 @@ namespace Clinic.AppForms
             userRoleLabel.Visible = true;
         }
 
+        /// <summary>
+        /// PKGH
+        /// Установка заголовка окна и заголовка на форме
+        /// </summary>
+        /// <param name="title"></param>
         public void SetTitle(string title)
         {
             string tempTitle = "Поликлиника \"Ай Ой\": " + title;
@@ -34,6 +38,10 @@ namespace Clinic.AppForms
             titleLabel.Text = title;
         }
 
+        /// <summary>
+        /// PKGH
+        /// Установка данных пользователя для отображения в правом верхнем углу
+        /// </summary>
         public void SetUserData()
         {
             userLoginLabel.Text = ContextManager.user.FullName;

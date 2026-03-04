@@ -31,6 +31,10 @@ namespace Clinic.AppForms
             FillForm();
         }
 
+        /// <summary>
+        /// PKGH
+        /// Заполнение формы данными
+        /// </summary>
         private void FillForm()
         {
             if (_patient.IdPatient != 0)
@@ -51,6 +55,10 @@ namespace Clinic.AppForms
             }
         }
 
+        /// <summary>
+        /// PKGH
+        /// Проверка наличия группы инвалидности
+        /// </summary>
         private void InvalidnostGroupCheck()
         {
             if (_patient.InvalidnostGroup.HasValue && _patient.InvalidnostGroupDate.HasValue)
@@ -66,6 +74,12 @@ namespace Clinic.AppForms
             }
         }
 
+        /// <summary>
+        /// PKGH
+        /// Сохранение изменений
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void saveButton_Click(object sender, EventArgs e)
         {
             try
@@ -133,12 +147,23 @@ namespace Clinic.AppForms
             }
         }
 
+        /// <summary>
+        /// PKGH
+        /// Обновление состояния поля Группы и Даты при переключении инвалидности
+        /// </summary>
+        /// <param name="enabled"></param>
         private void UpdateInvalidnostControlsState(bool enabled)
         {
             invalidnostGroupNumericUpDown.Enabled = enabled;
             invalidnostGroupDateDateTimePicker.Enabled = enabled;
         }
 
+        /// <summary>
+        /// PKGH
+        /// Переключение инвалидности
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void invalidnostToggleButton_Click(object sender, EventArgs e)
         {
             _isInvalidnost = !_isInvalidnost;

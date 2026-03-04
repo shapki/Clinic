@@ -22,12 +22,20 @@ namespace Clinic.AppForms
             InitializeComboBoxes();
         }
 
+        /// <summary>
+        /// PKGH
+        /// Первоначальная подстановка значений для выпадающих списков
+        /// </summary>
         private void InitializeComboBoxes()
         {
             birthDateSortComboBox.SelectedIndex = 0;
             genderComboBox.SelectedIndex = 0;
         }
 
+        /// <summary>
+        /// PKGH
+        /// Проверка уровня доступа пользователя
+        /// </summary>
         private void CheckUserAccess()
         {
             if (AccessManager.IsAdmin() || AccessManager.IsMedic())
@@ -42,11 +50,19 @@ namespace Clinic.AppForms
             }
         }
 
+        /// <summary>
+        /// PKGH
+        /// Очистка пациентов
+        /// </summary>
         private void ClearPatients()
         {
             flowLayoutPanel1.Controls.Clear();
         }
 
+        /// <summary>
+        /// PKGH
+        /// Вывод пациентов
+        /// </summary>
         private void ShowPatients()
         {
             flowLayoutPanel1.Controls.Clear();
@@ -57,6 +73,10 @@ namespace Clinic.AppForms
             }
         }
 
+        /// <summary>
+        /// PKGH
+        /// Выборка пациентов
+        /// </summary>
         private void SelectPatients()
         {
             string searchInput = searchTextBox.Text.Trim();
@@ -95,6 +115,10 @@ namespace Clinic.AppForms
             _patients = tmpPatients.ToList();
         }
 
+        /// <summary>
+        /// PKGH
+        /// Обновление панели с пациентами
+        /// </summary>
         public void Refresh()
         {
             ClearPatients();

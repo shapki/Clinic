@@ -3,6 +3,10 @@ using Clinic.AppModels;
 
 namespace Clinic.AppServices
 {
+    /// <summary>
+    /// PKGH
+    /// Общее 'хранилище' для текущего пользователя и некоторых форм
+    /// </summary>
     internal class ContextManager
     {
         public static Users user;
