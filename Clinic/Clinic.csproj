@@ -108,6 +108,7 @@
     <Compile Include="AppModels\Visits.cs" />
     <Compile Include="AppServices\AccessManager.cs" />
     <Compile Include="AppServices\AuthManager.cs" />
+    <Compile Include="AppServices\CaloriesCalculator.cs" />
     <Compile Include="AppServices\ContextManager.cs" />
     <Compile Include="AppServices\FileManager.cs" />
     <Compile Include="Program.cs" />
@@ -145,6 +146,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="AppDocs\algorythm_calories.vsdx" />
     <None Include="AppDocs\algorythm_work-with-patients.vsdx" />
     <None Include="AppDocs\ErDiagram.pdf" />
     <None Include="AppDocs\testing.docx" />

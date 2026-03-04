@@ -36,6 +36,8 @@
             this.searchLabel = new System.Windows.Forms.Label();
             this.searchTextBox = new System.Windows.Forms.TextBox();
             this.addPatientButton = new System.Windows.Forms.Button();
+            this.caloriesKoefLabel = new System.Windows.Forms.Label();
+            this.caloriesWithActivityLvlLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -48,6 +50,8 @@
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.caloriesWithActivityLvlLabel);
+            this.splitContainer1.Panel1.Controls.Add(this.caloriesKoefLabel);
             this.splitContainer1.Panel1.Controls.Add(this.addPatientButton);
             this.splitContainer1.Panel1.Controls.Add(this.searchTextBox);
             this.splitContainer1.Panel1.Controls.Add(this.searchLabel);
@@ -150,6 +154,24 @@
             this.addPatientButton.Visible = false;
             this.addPatientButton.Click += new System.EventHandler(this.addPatientButton_Click);
             // 
+            // caloriesKoefLabel
+            // 
+            this.caloriesKoefLabel.AutoSize = true;
+            this.caloriesKoefLabel.Location = new System.Drawing.Point(121, 40);
+            this.caloriesKoefLabel.Name = "caloriesKoefLabel";
+            this.caloriesKoefLabel.Size = new System.Drawing.Size(91, 13);
+            this.caloriesKoefLabel.TabIndex = 12;
+            this.caloriesKoefLabel.Text = "КК с числ коэф: ";
+            // 
+            // caloriesWithActivityLvlLabel
+            // 
+            this.caloriesWithActivityLvlLabel.AutoSize = true;
+            this.caloriesWithActivityLvlLabel.Location = new System.Drawing.Point(121, 53);
+            this.caloriesWithActivityLvlLabel.Name = "caloriesWithActivityLvlLabel";
+            this.caloriesWithActivityLvlLabel.Size = new System.Drawing.Size(112, 13);
+            this.caloriesWithActivityLvlLabel.TabIndex = 13;
+            this.caloriesWithActivityLvlLabel.Text = "КК с ур активности: ";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -176,5 +198,7 @@
         private System.Windows.Forms.TextBox searchTextBox;
         private System.Windows.Forms.Label searchLabel;
         private System.Windows.Forms.Button addPatientButton;
+        private System.Windows.Forms.Label caloriesKoefLabel;
+        private System.Windows.Forms.Label caloriesWithActivityLvlLabel;
     }
 }

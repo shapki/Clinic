@@ -20,6 +20,13 @@ namespace Clinic.AppForms
             ContextManager.mainForm = this;
             CheckUserAccess();
             InitializeComboBoxes();
+            CaloriesCode();
+        }
+
+        private void CaloriesCode()
+        {
+            caloriesKoefLabel.Text += Convert.ToString(CalorieCalculator.CalculateDailyCalories(1, 1.375));
+            caloriesWithActivityLvlLabel.Text += Convert.ToString(CalorieCalculator.CalculateDailyCalories(1, ActivityLevel.Moderate));
         }
 
         /// <summary>
