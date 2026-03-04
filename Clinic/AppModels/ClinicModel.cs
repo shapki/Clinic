@@ -1,7 +1,4 @@
-using System;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
-using System.Linq;
 
 namespace Clinic.AppModels
 {
@@ -16,6 +13,7 @@ namespace Clinic.AppModels
         public virtual DbSet<Medics> Medics { get; set; }
         public virtual DbSet<Patients> Patients { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
+        public virtual DbSet<Users> Users { get; set; }
         public virtual DbSet<Visits> Visits { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
