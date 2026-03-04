@@ -23,5 +23,10 @@ namespace Clinic.AppForms
         {
             AuthManager.Login(loginTextBox.Text, passwordTextBox.Text);
         }
+
+        private void guestLoginButton_Click(object sender, System.EventArgs e)
+        {
+            AuthManager.Login("g", "g");
+        }
     }
 }

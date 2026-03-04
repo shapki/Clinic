@@ -38,6 +38,7 @@
             this.loginTextBox = new System.Windows.Forms.TextBox();
             this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.loginButton = new System.Windows.Forms.Button();
+            this.guestLoginButton = new System.Windows.Forms.Button();
             loginLabel = new System.Windows.Forms.Label();
             passwordLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -54,12 +55,31 @@
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.guestLoginButton);
             this.splitContainer1.Panel2.Controls.Add(this.loginButton);
             this.splitContainer1.Panel2.Controls.Add(loginLabel);
             this.splitContainer1.Panel2.Controls.Add(this.loginTextBox);
             this.splitContainer1.Panel2.Controls.Add(passwordLabel);
             this.splitContainer1.Panel2.Controls.Add(this.passwordTextBox);
             this.splitContainer1.Size = new System.Drawing.Size(539, 450);
+            // 
+            // loginLabel
+            // 
+            loginLabel.AutoSize = true;
+            loginLabel.Location = new System.Drawing.Point(138, 105);
+            loginLabel.Name = "loginLabel";
+            loginLabel.Size = new System.Drawing.Size(40, 13);
+            loginLabel.TabIndex = 0;
+            loginLabel.Text = "Логин";
+            // 
+            // passwordLabel
+            // 
+            passwordLabel.AutoSize = true;
+            passwordLabel.Location = new System.Drawing.Point(138, 133);
+            passwordLabel.Name = "passwordLabel";
+            passwordLabel.Size = new System.Drawing.Size(47, 13);
+            passwordLabel.TabIndex = 2;
+            passwordLabel.Text = "Пароль";
             // 
             // shapkin_clinicDataSet
             // 
@@ -85,15 +105,6 @@
             this.tableAdapterManager.UsersTableAdapter = this.usersTableAdapter;
             this.tableAdapterManager.VisitsTableAdapter = null;
             // 
-            // loginLabel
-            // 
-            loginLabel.AutoSize = true;
-            loginLabel.Location = new System.Drawing.Point(138, 105);
-            loginLabel.Name = "loginLabel";
-            loginLabel.Size = new System.Drawing.Size(40, 13);
-            loginLabel.TabIndex = 0;
-            loginLabel.Text = "Логин";
-            // 
             // loginTextBox
             // 
             this.loginTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "Login", true));
@@ -102,15 +113,6 @@
             this.loginTextBox.Name = "loginTextBox";
             this.loginTextBox.Size = new System.Drawing.Size(186, 22);
             this.loginTextBox.TabIndex = 1;
-            // 
-            // passwordLabel
-            // 
-            passwordLabel.AutoSize = true;
-            passwordLabel.Location = new System.Drawing.Point(138, 133);
-            passwordLabel.Name = "passwordLabel";
-            passwordLabel.Size = new System.Drawing.Size(47, 13);
-            passwordLabel.TabIndex = 2;
-            passwordLabel.Text = "Пароль";
             // 
             // passwordTextBox
             // 
@@ -132,6 +134,17 @@
             this.loginButton.Text = "Войти";
             this.loginButton.UseVisualStyleBackColor = false;
             this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
+            // 
+            // guestLoginButton
+            // 
+            this.guestLoginButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(186)))), ((int)(((byte)(128)))));
+            this.guestLoginButton.Location = new System.Drawing.Point(427, 291);
+            this.guestLoginButton.Name = "guestLoginButton";
+            this.guestLoginButton.Size = new System.Drawing.Size(100, 23);
+            this.guestLoginButton.TabIndex = 5;
+            this.guestLoginButton.Text = "Войти как гость";
+            this.guestLoginButton.UseVisualStyleBackColor = false;
+            this.guestLoginButton.Click += new System.EventHandler(this.guestLoginButton_Click);
             // 
             // LoginForm
             // 
@@ -160,5 +173,6 @@
         private System.Windows.Forms.Button loginButton;
         private System.Windows.Forms.TextBox loginTextBox;
         private System.Windows.Forms.TextBox passwordTextBox;
+        private System.Windows.Forms.Button guestLoginButton;
     }
 }

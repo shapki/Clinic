@@ -29,6 +29,13 @@
         private void InitializeComponent()
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.birthDateSortLabel = new System.Windows.Forms.Label();
+            this.birthDateSortComboBox = new System.Windows.Forms.ComboBox();
+            this.genderLabel = new System.Windows.Forms.Label();
+            this.genderComboBox = new System.Windows.Forms.ComboBox();
+            this.searchLabel = new System.Windows.Forms.Label();
+            this.searchTextBox = new System.Windows.Forms.TextBox();
+            this.addPatientButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -38,6 +45,16 @@
             // 
             // splitContainer1
             // 
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.addPatientButton);
+            this.splitContainer1.Panel1.Controls.Add(this.searchTextBox);
+            this.splitContainer1.Panel1.Controls.Add(this.searchLabel);
+            this.splitContainer1.Panel1.Controls.Add(this.genderComboBox);
+            this.splitContainer1.Panel1.Controls.Add(this.genderLabel);
+            this.splitContainer1.Panel1.Controls.Add(this.birthDateSortComboBox);
+            this.splitContainer1.Panel1.Controls.Add(this.birthDateSortLabel);
             // 
             // splitContainer1.Panel2
             // 
@@ -52,6 +69,78 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(800, 326);
             this.flowLayoutPanel1.TabIndex = 0;
+            // 
+            // birthDateSortLabel
+            // 
+            this.birthDateSortLabel.AutoSize = true;
+            this.birthDateSortLabel.Location = new System.Drawing.Point(121, 89);
+            this.birthDateSortLabel.Name = "birthDateSortLabel";
+            this.birthDateSortLabel.Size = new System.Drawing.Size(106, 13);
+            this.birthDateSortLabel.TabIndex = 5;
+            this.birthDateSortLabel.Text = "Сортировка по ДР";
+            // 
+            // birthDateSortComboBox
+            // 
+            this.birthDateSortComboBox.FormattingEnabled = true;
+            this.birthDateSortComboBox.Items.AddRange(new object[] {
+            "Не использовать",
+            "По возрастанию",
+            "По убыванию"});
+            this.birthDateSortComboBox.Location = new System.Drawing.Point(233, 86);
+            this.birthDateSortComboBox.Name = "birthDateSortComboBox";
+            this.birthDateSortComboBox.Size = new System.Drawing.Size(151, 21);
+            this.birthDateSortComboBox.TabIndex = 6;
+            this.birthDateSortComboBox.SelectedIndexChanged += new System.EventHandler(this.birthDateSortComboBox_SelectedIndexChanged);
+            // 
+            // genderLabel
+            // 
+            this.genderLabel.AutoSize = true;
+            this.genderLabel.Location = new System.Drawing.Point(390, 89);
+            this.genderLabel.Name = "genderLabel";
+            this.genderLabel.Size = new System.Drawing.Size(28, 13);
+            this.genderLabel.TabIndex = 7;
+            this.genderLabel.Text = "Пол";
+            // 
+            // genderComboBox
+            // 
+            this.genderComboBox.FormattingEnabled = true;
+            this.genderComboBox.Items.AddRange(new object[] {
+            "Все",
+            "Муж",
+            "Жен"});
+            this.genderComboBox.Location = new System.Drawing.Point(424, 86);
+            this.genderComboBox.Name = "genderComboBox";
+            this.genderComboBox.Size = new System.Drawing.Size(55, 21);
+            this.genderComboBox.TabIndex = 8;
+            this.genderComboBox.SelectedIndexChanged += new System.EventHandler(this.genderComboBox_SelectedIndexChanged);
+            // 
+            // searchLabel
+            // 
+            this.searchLabel.AutoSize = true;
+            this.searchLabel.Location = new System.Drawing.Point(485, 89);
+            this.searchLabel.Name = "searchLabel";
+            this.searchLabel.Size = new System.Drawing.Size(40, 13);
+            this.searchLabel.TabIndex = 9;
+            this.searchLabel.Text = "Поиск";
+            // 
+            // searchTextBox
+            // 
+            this.searchTextBox.Location = new System.Drawing.Point(531, 85);
+            this.searchTextBox.Name = "searchTextBox";
+            this.searchTextBox.Size = new System.Drawing.Size(100, 22);
+            this.searchTextBox.TabIndex = 10;
+            this.searchTextBox.TextChanged += new System.EventHandler(this.searchTextBox_TextChanged);
+            // 
+            // addPatientButton
+            // 
+            this.addPatientButton.BackColor = System.Drawing.Color.Red;
+            this.addPatientButton.Location = new System.Drawing.Point(702, 83);
+            this.addPatientButton.Name = "addPatientButton";
+            this.addPatientButton.Size = new System.Drawing.Size(95, 23);
+            this.addPatientButton.TabIndex = 11;
+            this.addPatientButton.Text = "Доб. пациента";
+            this.addPatientButton.UseVisualStyleBackColor = false;
+            this.addPatientButton.Click += new System.EventHandler(this.addPatientButton_Click);
             // 
             // MainForm
             // 
@@ -71,5 +160,12 @@
         #endregion
 
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.ComboBox birthDateSortComboBox;
+        private System.Windows.Forms.Label birthDateSortLabel;
+        private System.Windows.Forms.ComboBox genderComboBox;
+        private System.Windows.Forms.Label genderLabel;
+        private System.Windows.Forms.TextBox searchTextBox;
+        private System.Windows.Forms.Label searchLabel;
+        private System.Windows.Forms.Button addPatientButton;
     }
 }

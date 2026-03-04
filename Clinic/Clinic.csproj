@@ -94,6 +94,7 @@
     <Compile Include="AppModels\Patients.cs" />
     <Compile Include="AppModels\Users.cs" />
     <Compile Include="AppModels\Visits.cs" />
+    <Compile Include="AppServices\AccessManager.cs" />
     <Compile Include="AppServices\AuthManager.cs" />
     <Compile Include="AppServices\ContextManager.cs" />
     <Compile Include="Program.cs" />
