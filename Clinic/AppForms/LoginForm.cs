@@ -2,7 +2,7 @@
 
 namespace Clinic.AppForms
 {
-    public partial class LoginForm : Clinic.AppForms.MainForm
+    public partial class LoginForm : Clinic.AppForms.ParentForm
     {
         public LoginForm()
         {
