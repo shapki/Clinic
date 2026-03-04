@@ -36,7 +36,7 @@ namespace Clinic.AppForms
 
         public void SetUserData()
         {
-            userLoginLabel.Text = ContextManager.user.Login;
+            userLoginLabel.Text = ContextManager.user.FullName;
             userRoleLabel.Text = ContextManager.user.Role;
         }
 

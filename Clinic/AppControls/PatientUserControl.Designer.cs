@@ -86,6 +86,7 @@
             this.visitsHistoryButton.TabIndex = 8;
             this.visitsHistoryButton.Text = "История обращений";
             this.visitsHistoryButton.UseVisualStyleBackColor = false;
+            this.visitsHistoryButton.Visible = false;
             this.visitsHistoryButton.Click += new System.EventHandler(this.visitsHistoryButton_Click);
             // 
             // insurancePolicyLabel

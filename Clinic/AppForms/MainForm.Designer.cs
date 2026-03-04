@@ -78,6 +78,7 @@
             this.birthDateSortLabel.Size = new System.Drawing.Size(106, 13);
             this.birthDateSortLabel.TabIndex = 5;
             this.birthDateSortLabel.Text = "Сортировка по ДР";
+            this.birthDateSortLabel.Visible = false;
             // 
             // birthDateSortComboBox
             // 
@@ -90,6 +91,7 @@
             this.birthDateSortComboBox.Name = "birthDateSortComboBox";
             this.birthDateSortComboBox.Size = new System.Drawing.Size(151, 21);
             this.birthDateSortComboBox.TabIndex = 6;
+            this.birthDateSortComboBox.Visible = false;
             this.birthDateSortComboBox.SelectedIndexChanged += new System.EventHandler(this.birthDateSortComboBox_SelectedIndexChanged);
             // 
             // genderLabel
@@ -100,6 +102,7 @@
             this.genderLabel.Size = new System.Drawing.Size(28, 13);
             this.genderLabel.TabIndex = 7;
             this.genderLabel.Text = "Пол";
+            this.genderLabel.Visible = false;
             // 
             // genderComboBox
             // 
@@ -112,6 +115,7 @@
             this.genderComboBox.Name = "genderComboBox";
             this.genderComboBox.Size = new System.Drawing.Size(55, 21);
             this.genderComboBox.TabIndex = 8;
+            this.genderComboBox.Visible = false;
             this.genderComboBox.SelectedIndexChanged += new System.EventHandler(this.genderComboBox_SelectedIndexChanged);
             // 
             // searchLabel
@@ -122,6 +126,7 @@
             this.searchLabel.Size = new System.Drawing.Size(40, 13);
             this.searchLabel.TabIndex = 9;
             this.searchLabel.Text = "Поиск";
+            this.searchLabel.Visible = false;
             // 
             // searchTextBox
             // 
@@ -129,6 +134,7 @@
             this.searchTextBox.Name = "searchTextBox";
             this.searchTextBox.Size = new System.Drawing.Size(100, 22);
             this.searchTextBox.TabIndex = 10;
+            this.searchTextBox.Visible = false;
             this.searchTextBox.TextChanged += new System.EventHandler(this.searchTextBox_TextChanged);
             // 
             // addPatientButton
@@ -140,6 +146,7 @@
             this.addPatientButton.TabIndex = 11;
             this.addPatientButton.Text = "Доб. пациента";
             this.addPatientButton.UseVisualStyleBackColor = false;
+            this.addPatientButton.Visible = false;
             this.addPatientButton.Click += new System.EventHandler(this.addPatientButton_Click);
             // 
             // MainForm
