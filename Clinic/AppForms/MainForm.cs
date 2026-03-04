@@ -8,6 +8,8 @@ namespace Clinic.AppForms
         {
             InitializeComponent();
             ContextManager.parentForm.SetTitle("Пациенты");
+            ContextManager.parentForm.ShowLogoutUi();
+            ContextManager.parentForm.SetUserData();
             ContextManager.mainForm = this;
         }
     }

@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\Поликлиника.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
@@ -55,6 +58,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppControls\PatientUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppControls\PatientUserControl.Designer.cs">
+      <DependentUpon>PatientUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppControls\VisitUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppControls\VisitUserControl.Designer.cs">
+      <DependentUpon>VisitUserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="AppForms\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +94,7 @@
     <Compile Include="AppModels\Patients.cs" />
     <Compile Include="AppModels\Users.cs" />
     <Compile Include="AppModels\Visits.cs" />
+    <Compile Include="AppServices\AuthManager.cs" />
     <Compile Include="AppServices\ContextManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -87,8 +103,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Shapkin_clinicDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AppControls\PatientUserControl.resx">
+      <DependentUpon>PatientUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppControls\VisitUserControl.resx">
+      <DependentUpon>VisitUserControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AppForms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppForms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AppForms\ParentForm.resx">
       <DependentUpon>ParentForm.cs</DependentUpon>
@@ -141,8 +166,6 @@
     <None Include="Resources\photo.jpg" />
     <None Include="Resources\handicaped.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="AppControls\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

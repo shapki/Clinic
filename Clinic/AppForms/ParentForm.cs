@@ -33,5 +33,16 @@ namespace Clinic.AppForms
             title = tempTitle;
             titleLabel.Text = title;
         }
+
+        public void SetUserData()
+        {
+            userLoginLabel.Text = ContextManager.user.Login;
+            userRoleLabel.Text = ContextManager.user.Role;
+        }
+
+        private void logoutButton_Click(object sender, EventArgs e)
+        {
+            AuthManager.Logout(this);
+        }
     }
 }

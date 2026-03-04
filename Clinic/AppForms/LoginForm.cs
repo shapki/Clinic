@@ -19,14 +19,9 @@ namespace Clinic.AppForms
 
         }
 
-        private void LoginForm_Load(object sender, System.EventArgs e)
-        {
-
-        }
-
         private void loginButton_Click(object sender, System.EventArgs e)
         {
-
+            AuthManager.Login(loginTextBox.Text, passwordTextBox.Text);
         }
     }
 }
