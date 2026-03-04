@@ -18,3 +18,5 @@ D:\test\clinic\Clinic\obj\Debug\Clinic.csproj.CoreCompileInputs.cache
 D:\test\clinic\Clinic\obj\Debug\Clinic.csproj.Up2Date
 D:\test\clinic\Clinic\obj\Debug\Clinic.exe
 D:\test\clinic\Clinic\obj\Debug\Clinic.pdb
+D:\test\clinic\Clinic\obj\Debug\Clinic.AppForms.CreateUpdatePatientForm.resources
+D:\test\clinic\Clinic\obj\Debug\Clinic.AppForms.VisitsForm.resources

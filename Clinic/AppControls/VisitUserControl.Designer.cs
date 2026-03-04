@@ -60,7 +60,7 @@
             this.Controls.Add(this.dateLabel);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.Name = "VisitUserControl";
-            this.Size = new System.Drawing.Size(698, 69);
+            this.Size = new System.Drawing.Size(775, 69);
             this.ResumeLayout(false);
             this.PerformLayout();
 
