@@ -3,11 +3,11 @@ using Clinic.AppModels;
 
 namespace Clinic.AppServices
 {
-    public class ContextManager
+    internal class ContextManager
     {
-        private Users user;
-        private ParentForm parentForm;
-        private LoginForm loginForm;
-        private MainForm mainForm;
+        public static Users user;
+        public static ParentForm parentForm;
+        public static LoginForm loginForm;
+        public static MainForm mainForm;
     }
 }

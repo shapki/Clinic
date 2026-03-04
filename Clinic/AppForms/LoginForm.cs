@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
+﻿using Clinic.AppServices;
 
 namespace Clinic.AppForms
 {
@@ -13,6 +7,26 @@ namespace Clinic.AppForms
         public LoginForm()
         {
             InitializeComponent();
+            ContextManager.parentForm.SetTitle("Авторизация");
+            ContextManager.loginForm = this;
+        }
+
+        private void usersBindingNavigatorSaveItem_Click(object sender, System.EventArgs e)
+        {
+            this.Validate();
+            this.usersBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.shapkin_clinicDataSet);
+
+        }
+
+        private void LoginForm_Load(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void loginButton_Click(object sender, System.EventArgs e)
+        {
+
         }
     }
 }

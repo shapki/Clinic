@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Clinic.AppServices;
+using System;
 using System.Windows.Forms;
 
 namespace Clinic.AppForms
@@ -15,6 +9,29 @@ namespace Clinic.AppForms
         public ParentForm()
         {
             InitializeComponent();
+            HideLogoutUi();
+            ContextManager.parentForm = this;
+        }
+
+        public void HideLogoutUi()
+        {
+            logoutButton.Visible = false;
+            userLoginLabel.Visible = false;
+            userRoleLabel.Visible = false;
+        }
+
+        public void ShowLogoutUi()
+        {
+            logoutButton.Visible = true;
+            userLoginLabel.Visible = true;
+            userRoleLabel.Visible = true;
+        }
+
+        public void SetTitle(string title)
+        {
+            string tempTitle = "Поликлиника \"Ай Ой\": " + title;
+            title = tempTitle;
+            titleLabel.Text = title;
         }
     }
 }

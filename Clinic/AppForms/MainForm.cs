@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
+﻿using Clinic.AppServices;
 
 namespace Clinic.AppForms
 {
@@ -13,6 +7,8 @@ namespace Clinic.AppForms
         public MainForm()
         {
             InitializeComponent();
+            ContextManager.parentForm.SetTitle("Пациенты");
+            ContextManager.mainForm = this;
         }
     }
 }

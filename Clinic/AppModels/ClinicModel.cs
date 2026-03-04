@@ -12,7 +12,6 @@ namespace Clinic.AppModels
         public virtual DbSet<Genders> Genders { get; set; }
         public virtual DbSet<Medics> Medics { get; set; }
         public virtual DbSet<Patients> Patients { get; set; }
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<Users> Users { get; set; }
         public virtual DbSet<Visits> Visits { get; set; }
 
