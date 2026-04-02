@@ -36,6 +36,7 @@ namespace Clinic.AppForms
             string tempTitle = "Поликлиника \"Ай Ой\": " + title;
             title = tempTitle;
             titleLabel.Text = title;
+            this.Text = title;
         }
 
         /// <summary>
